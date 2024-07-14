@@ -5,7 +5,6 @@ import User from "./User";
     name: "tx_hashes",
     schema: "public",
 })
-@Unique("unique_tx_hash", ["tx_hash"])
 export default class TxHash {
     @PrimaryGeneratedColumn()
     //@ts-ignore
